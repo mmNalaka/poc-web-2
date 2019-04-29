@@ -4,6 +4,10 @@
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "engines": {
+    "node": "10.11.0",
+    "yarn": "1.9.4"
+  },
   "dependencies": {
     "@izettle/web-brand": "^7.1.1",
     "gatsby": "^2.3.15",
