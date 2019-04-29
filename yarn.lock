@@ -713,9 +713,9 @@
     signedsource "^1.0.0"
     yargs "^9.0.0"
 
-"@izettle/web-brand@^7.1.1":
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/@izettle/web-brand/-/web-brand-7.1.1.tgz#8672c71634063130b1def524e68857772cf951e3"
+"@izettle/web-brand@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@izettle/web-brand/-/web-brand-6.1.0.tgz#64bf575ee8a34448d719192cb17657b549cd4b72"
 
 "@mikaelkristiansson/domready@^1.0.9":
   version "1.0.9"
