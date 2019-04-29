@@ -1,17 +1,4 @@
 const path = require("path")
-const StoryblokClient = require("storyblok-js-client")
-
-const getStoryBlokData = () => {
-  Storyblok.get("cdn/stories", {
-    token: "4zLB1uOlBxP2da9sm6iuzgtt",
-  })
-    .then(response => {
-      console.log(response)
-    })
-    .catch(error => {
-      console.log(error)
-    })
-}
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -81,6 +68,9 @@ exports.createPages = ({ graphql, actions }) => {
               story: entry.node,
               headerTheme: pageHeaderTheme
             },
+          }, {
+            path: `/editor`,
+            component: path.resolve('src/pages/editor.js')
           })
         })
       })
