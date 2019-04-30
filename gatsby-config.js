@@ -9,7 +9,7 @@ module.exports = {
       options: {
         accessToken: "4zLB1uOlBxP2da9sm6iuzgtt",
         homeSlug: "home",
-        version: process.env.NODE_ENV === "production" ? "published" : "draft",
+        version: getVersion(),
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -43,4 +43,14 @@ module.exports = {
       },
     },
   ],
+}
+
+function getVersion ()  {
+  if (process.env.NODE_ENV === "production" && process.env.APP === 'preview') {
+    return 'draft'
+  } else if (process.env.NODE_ENV === "production") {
+    return 'published'
+  } else {
+    return 'draft'
+  }
 }
