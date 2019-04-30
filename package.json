@@ -3,10 +3,6 @@
   "private": true,
   "description": "Storyblok",
   "version": "0.1.0",
-  "engines": {
-    "node": "10.11.0",
-    "yarn": "1.9.4"
-  },
   "dependencies": {
     "@izettle/web-brand": "^6.1.0",
     "gatsby": "^2.3.15",
