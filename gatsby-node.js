@@ -64,7 +64,7 @@ exports.createPages = ({ graphql, actions }) => {
             path: `/${pagePath}`,
             component: storyblokEntry,
             context: {
-              layout: layout[0].node,
+              layout: layout[0]['node'],
               story: entry.node,
               headerTheme: pageHeaderTheme
             },

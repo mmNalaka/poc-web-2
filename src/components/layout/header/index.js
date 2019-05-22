@@ -11,6 +11,7 @@ import Logo from "../../composition/logo/index"
 import { white, magnetic } from "../../theme/colors"
 import { media } from "../../theme/mixins"
 import { globalPadding } from "../../theme/variables"
+import CtaButton from "../../composition/cta";
 
 const StyledHeader = styled.header`
   display: flex;
@@ -90,7 +91,7 @@ const LayoutHeader = props => (
       </Column>
 
       <Column width={2} widthMedium={3} vAlign="center">
-        <span>Nav {props.blok.logoHeight}</span>
+        <CtaButton to="/" ctaStyle="mintSolid" align="flex-end">Login</CtaButton>
       </Column>
     </Grid>
   </StyledHeader>

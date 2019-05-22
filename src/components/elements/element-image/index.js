@@ -13,7 +13,6 @@ const StyledImg = styled.img`
 
 const ElementImage = props => (
   <SbEditable content={props.blok}>
-    {console.log(props)}
     <StyledImg src={props.blok.image.image} />
   </SbEditable>
 )

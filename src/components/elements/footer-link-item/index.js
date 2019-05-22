@@ -3,9 +3,6 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { rem } from "polished"
 
-import { media } from "../../theme/mixins"
-import { globalPadding } from "../../theme/variables"
-
 const LinkItem = styled.li`
   display: flex;
 `

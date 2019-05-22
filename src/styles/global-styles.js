@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6{
   width: 100%;
   font-weight: 600;
   line-height: 1.125;
-  font-family: Tiempos, sans-serif;
+  font-family: Tiempos;
   letter-spacing: 0.03em;
 }
 
@@ -88,6 +88,10 @@ h6{
   font-size: 1.4rem;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
 
 /* Font Styles */
 .font-zent {
@@ -110,6 +114,4 @@ h6{
 .text-right {
   text-align: right;
 }
-
-
 `

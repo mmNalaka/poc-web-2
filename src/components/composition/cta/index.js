@@ -53,7 +53,7 @@ const CTA_STYLE = {
   },
 }
 
-const StyledLink = styled(Link)`
+export const StyledLink = styled(Link)`
   display: flex;
   font-size: 15px;
   background-color: ${props => props.theme.background};
@@ -67,14 +67,17 @@ const StyledLink = styled(Link)`
   font-weight: ${props => props.theme.fontWeight};
 `
 
-const CtaButton = props => (
-  <StyledLink
-    to={props.url.cached_url || props.url.url || "/"}
+const CtaButton = props => {
+  const url = props.url ? (props.url.cached_url || props.url.url) : "/"
+  return (
+    <StyledLink
+    to={url}
     theme={CTA_STYLE[props.ctaStyle] || "mintSolid"}
     align={props.align}
   >
     {props.children}
   </StyledLink>
-)
+  )
+}
 
 export default CtaButton

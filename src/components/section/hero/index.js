@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import SbEditable from "storyblok-react"
 import { rem } from "polished";
+import CtaButton from "../../composition/cta";
 
 const Section = styled.section`
   display: flex;
@@ -30,6 +31,11 @@ const StyledContainer = styled.div`
     flex: 1;
   }
 
+  .col-content{
+    display: flex;
+    flex-direction: column;
+  }
+
   h2 {
     font-family: Tiempos;
     margin-bottom: 1.5rem;
@@ -49,6 +55,8 @@ const SectionHero = props => (
         <div className="col-content">
           <h2>{props.blok.title}</h2>
           <p>{props.blok.text}</p>
+
+          <CtaButton {...props.blok.cta} ctaStyle="mintSolid">{props.blok.ctaText}</CtaButton>
         </div>
         <div className="col-img" />
       </StyledContainer>

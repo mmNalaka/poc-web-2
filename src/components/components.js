@@ -17,6 +17,8 @@ import FooterLinkGroup from "./elements/footer-link-group"
 import FooterLinkItem from "./elements/footer-link-item"
 
 import SectionHero from "./section/hero";
+import SectionCallToAction from "./section/call-to-action";
+import SectionImageAndText from "./section/image-and-text";
 
 export default {
   page: Page,
@@ -38,5 +40,8 @@ export default {
   footerLinkGroup: FooterLinkGroup,
   footerLinkItem: FooterLinkItem,
 
-  sectionHero: SectionHero
+  sectionHero: SectionHero,
+  sectionCallToAction: SectionCallToAction,
+  sectionImageAndText: SectionImageAndText
+
 }
