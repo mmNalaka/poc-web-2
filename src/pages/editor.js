@@ -78,7 +78,7 @@ class StoryblokEntry extends React.Component {
     )
   }
 
-  initStoryblokEvents() {
+ initStoryblokEvents() {
     this.loadStory({ storyId: getParam("path") })
 
     let sb = window.storyblok

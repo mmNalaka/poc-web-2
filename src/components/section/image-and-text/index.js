@@ -12,14 +12,10 @@ const StyledImage = styled.img`
   height: auto;
 `
 
-const getIMageUrl = url => {
-  console.log(`http://${url}`)
-  return `http://${url}`
-}
+const getIMageUrl = url => `http://${url}`
 
 const SectionImageAndText = props => (
   <SbEditable content={props.blok}>
-    {console.log(props)}
     <Section paddingTop={2} paddingBottom={2}>
       {!props.blok.inverseLayout ? (
         <Grid>
