@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
     author: `iZettle`,
+    siteUrl: `https://nostalgic-lalande-2304b6.netlify.com`,
   },
   plugins: [
     {
@@ -23,6 +24,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {

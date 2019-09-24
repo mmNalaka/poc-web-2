@@ -12,6 +12,7 @@
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-react-svg": "^2.1.1",
     "gatsby-plugin-sharp": "^2.0.32",
+    "gatsby-plugin-sitemap": "^2.2.14",
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-source-storyblok": "^0.1.4",
     "gatsby-transformer-sharp": "^2.1.17",
